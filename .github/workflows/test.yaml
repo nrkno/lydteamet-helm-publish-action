@@ -15,7 +15,6 @@ jobs:
 
       - uses: nrkno/lydteamet-helm-publish-action@master
         with:
-          helm_path: ./helm
           name: lydteamet-test-publish-action
           version: 0.0.1
           registry: ${{ secrets.PLATTFORM_CONTAINER_REGISTRY }}
