@@ -17,8 +17,8 @@ jobs:
 
       - uses: nrkno/lydteamet-helm-publish-action@master
         with:
-          name: lydteamet-test-publish-action
-          version: 0.0.1
+          name: lydteamet-helm-publish-action
+          version: 0.0.${{ env.GITHUB_RUN_ID }}
           registry: ${{ secrets.PLATTFORM_CONTAINER_REGISTRY }}
           username: ${{ secrets.PLATTFORM_ACR_PUSH_CLIENT_ID }}
           password: ${{ secrets.PLATTFORM_ACR_PUSH_CLIENT_SECRET }}
