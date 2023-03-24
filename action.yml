@@ -1,0 +1,5 @@
+---
+name: 'lydteamet-helm-publish-action'
+description: 'Versions, packages and pushes a helm chart to azurecr'
+inputs:
+  version:
