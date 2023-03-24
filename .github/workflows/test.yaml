@@ -13,6 +13,8 @@ jobs:
 
     steps:
 
+      - uses: actions/checkout@v3
+
       - uses: nrkno/lydteamet-helm-publish-action@master
         with:
           name: lydteamet-test-publish-action
