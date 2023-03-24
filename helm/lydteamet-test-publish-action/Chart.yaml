@@ -1,5 +1,5 @@
 ---
-name: lydteamet-helm-publish-action
+name: lydteamet-test-publish-action
 version: "0.0.1"
 apiVersion: v1
 sources:
