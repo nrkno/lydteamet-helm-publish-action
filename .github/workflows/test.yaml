@@ -13,7 +13,7 @@ jobs:
 
     steps:
 
-      - uses: ./.github/workflows/test.yaml
+      - uses: nrkno/lydteamet-helm-publish-action@master
         with:
           helm_path: ./helm
           name: lydteamet-test-publish-action
