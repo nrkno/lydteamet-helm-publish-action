@@ -19,6 +19,6 @@ jobs:
         with:
           helm_path: ./helm/lydteamet-test-publish-action
           version: 0.0.$GITHUB_RUN_NUMBER
-          registry: ${{ secrets.PLATTFORM_CONTAINER_REGISTRY }}
+          registry: ${{ vars.PLATTFORM_CONTAINER_REGISTRY }}
           username: ${{ secrets.PLATTFORM_ACR_PUSH_CLIENT_ID }}
           password: ${{ secrets.PLATTFORM_ACR_PUSH_CLIENT_SECRET }}
