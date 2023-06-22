@@ -50,3 +50,6 @@ runs:
       shell: bash
       run: helm push *-${{ inputs.version }}.tgz oci://${{ inputs.registry }}/${{ inputs.repository }}
 
+    - name: Clean up
+      shell: bash
+      run: rm -f *-${{ inputs.version }}.tgz
